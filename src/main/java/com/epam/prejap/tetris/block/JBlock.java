@@ -2,6 +2,8 @@ package com.epam.prejap.tetris.block;
 
 /**
  * class containing J block
+ *
+ * @author Michal Marek
  */
 final class JBlock extends Block {
 
@@ -14,4 +16,5 @@ final class JBlock extends Block {
     public JBlock() {
         super(IMAGE);
     }
+
 }
