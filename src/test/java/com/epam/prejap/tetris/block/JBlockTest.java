@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-@Test
+@Test(groups = {"blockShapes", "blocks"})
 public class JBlockTest {
 
     JBlock jBlock = new JBlock();
@@ -13,15 +13,13 @@ public class JBlockTest {
     public void numberOfRowsShouldEqualThree() {
         int actual = jBlock.rows();
         int expected = 3;
-        assertEquals(actual, expected,
-                String.format("Number of rows is incorrect. Expeted: " + expected + " rows, actual number of rows is " + actual));
+        assertEquals(actual, expected, "Number of rows is incorrect. Expected: " + expected + " rows, actual number of rows is " + actual);
     }
 
     public void numberOfColsShouldEqualThree() {
         int actual = jBlock.cols();
         int expected = 2;
-        assertEquals(actual, expected,
-                String.format("Number of cols is incorrect. Expeted: " + expected + " cols, actual number of cols is " + actual));
+        assertEquals(actual, expected, "Number of cols is incorrect. Expected: " + expected + " cols, actual number of cols is " + actual);
     }
 
     @Test(dataProvider = "dotsPositions")

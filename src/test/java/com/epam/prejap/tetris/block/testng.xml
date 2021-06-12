@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="TetrisSuite" verbose="1" >
+    <test name="TetrisTests" >
+        <groups>
+            <define name="all">
+                <include name="blockShapes"/>
+                <include name="blocks"/>
+            </define>
+        </groups>
+        <classes>
+            <class name="com.epam.prejap.tetris.block.JBlockTest"/>
+        </classes>
+    </test>
+</suite>

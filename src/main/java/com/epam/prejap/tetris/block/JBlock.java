@@ -1,7 +1,7 @@
 package com.epam.prejap.tetris.block;
 
 /**
- * class containing J block
+ * generated J block
  *
  * @author Michal Marek
  */
@@ -16,5 +16,4 @@ final class JBlock extends Block {
     public JBlock() {
         super(IMAGE);
     }
-
 }
