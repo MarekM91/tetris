@@ -5,9 +5,11 @@ import java.io.PrintStream;
 public class Printer {
 
     final PrintStream out;
+    private final CurrentScore currentScore;
 
-    public Printer(PrintStream out) {
+    public Printer(PrintStream out, CurrentScore currentScore) {
         this.out = out;
+        this.currentScore = currentScore;
     }
 
     void draw(byte[][] grid) {
@@ -42,4 +44,6 @@ public class Printer {
     void border(int width) {
         out.println("+" + "-".repeat(width) + "+");
     }
+
+    void printCurrentScore() { out.println("Current score:" + currentScore.getPoints()); }
 }
