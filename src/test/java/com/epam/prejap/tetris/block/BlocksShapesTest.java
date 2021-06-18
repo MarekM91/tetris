@@ -92,10 +92,25 @@ public class BlocksShapesTest {
                 {yBlock.dotAt(2, 2), 0, "incorrect dotAt(2, 2)"}
         };
 
+        JBlock jBlock = new JBlock();
+        int actualRowsForJBlock = jBlock.rows();
+        int expectedRowsForJBlock = 3;
+        int actualColsForJBlock = jBlock.cols();
+        int expectedColsForJBlock = 2;
+        var JBlockDotRepresentation = new Object[][]{
+                {jBlock.dotAt(0, 0), 0, "incorrect dotAt(0,0)"},
+                {jBlock.dotAt(0, 1), 1, "incorrect dotAt(0,1)"},
+                {jBlock.dotAt(1, 0), 0, "incorrect dotAt(1,0)"},
+                {jBlock.dotAt(1, 1), 1, "incorrect dotAt(1,1)"},
+                {jBlock.dotAt(2, 0), 1, "incorrect dotAt(2,0)"},
+                {jBlock.dotAt(2, 1), 1, "incorrect dotAt(2,1)"}
+        };
+
         return new Object[][]{
                 {"Tests for OBlock ", actualRowsForOBlock, expectedRowsForOBlock, actualColsForOBlock, expectedColsForOBlock, oBlockDotRepresentation},
                 {"Tests for TBlock ", actualRowsForTBlock, expectedRowsForTBlock, actualColsForTBlock, expectedColsForTBlock, TBlockDotRepresentation},
-                {"Tests for YBlock ", actualRowsForYBlock, expectedRowsForYBlock, actualColsForYBlock, expectedColsForYBlock, YBlockDotRepresentation}
+                {"Tests for YBlock ", actualRowsForYBlock, expectedRowsForYBlock, actualColsForYBlock, expectedColsForYBlock, YBlockDotRepresentation},
+                {"Tests for JBlock ", actualRowsForJBlock, expectedRowsForJBlock, actualColsForJBlock, expectedColsForJBlock, JBlockDotRepresentation}
         };
     }
 }
