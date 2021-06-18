@@ -1,7 +1,7 @@
 package com.epam.prejap.tetris.block;
 
 /**
- * generated J block
+ * Generates a "J" block.
  *
  * @author Michal Marek
  */
