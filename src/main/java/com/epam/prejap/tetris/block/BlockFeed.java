@@ -14,7 +14,8 @@ public class BlockFeed {
             TBlock::new,
             YBlock::new,
             IBlock::new,
-            SBlock::new
+            SBlock::new,
+            JBlock::new
     );
 
     public BlockFeed() {

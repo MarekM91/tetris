@@ -46,6 +46,11 @@ public class BlockShapeData {
                 {1, 1, 1},
                 {1, 0, 1}
         });
+        put(JBlock::new, new byte[][]{
+                {0, 1},
+                {0, 1},
+                {1, 1}
+        });
     }};
 
     /**

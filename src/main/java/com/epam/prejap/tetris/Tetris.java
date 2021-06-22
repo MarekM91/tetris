@@ -36,6 +36,7 @@ class Tetris {
                 moved |= (nextMove = playfield.move(move));
             } while (nextMove);
 
+
         } while (moved);
 
         return new Score(score);
