@@ -107,10 +107,10 @@ public class BlocksShapesTest {
         };
 
         return new Object[][]{
-                {"Tests for OBlock ", actualRowsForOBlock, expectedRowsForOBlock, actualColsForOBlock, expectedColsForOBlock, oBlockDotRepresentation},
-                {"Tests for TBlock ", actualRowsForTBlock, expectedRowsForTBlock, actualColsForTBlock, expectedColsForTBlock, TBlockDotRepresentation},
-                {"Tests for YBlock ", actualRowsForYBlock, expectedRowsForYBlock, actualColsForYBlock, expectedColsForYBlock, YBlockDotRepresentation},
-                {"Tests for JBlock ", actualRowsForJBlock, expectedRowsForJBlock, actualColsForJBlock, expectedColsForJBlock, JBlockDotRepresentation}
+                {"Tests for OBlock " ,actualRowsForOBlock ,expectedRowsForOBlock ,actualColsForOBlock ,expectedColsForOBlock ,oBlockDotRepresentation},
+                {"Tests for TBlock " ,actualRowsForTBlock ,expectedRowsForTBlock ,actualColsForTBlock ,expectedColsForTBlock ,TBlockDotRepresentation},
+                {"Tests for YBlock " ,actualRowsForYBlock ,expectedRowsForYBlock ,actualColsForYBlock ,expectedColsForYBlock ,YBlockDotRepresentation},
+                {"Tests for JBlock " ,actualRowsForJBlock ,expectedRowsForJBlock ,actualColsForJBlock ,expectedColsForJBlock ,JBlockDotRepresentation}
         };
     }
 }
