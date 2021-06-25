@@ -116,4 +116,8 @@ public class Parameters {
     public int getDelay() {
         return Args.DELAY.value();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 98 arguments (#109)
