@@ -11,7 +11,7 @@ import java.util.function.Supplier;
  *
  * @author Nikita Pochapynskyi
  */
-public class BlockShapeData {
+public class BlocksShapesData {
 
     /**
      * Contains block's constructor reference and its expected image for each block to be tested.
