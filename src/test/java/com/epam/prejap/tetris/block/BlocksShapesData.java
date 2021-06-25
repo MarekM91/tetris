@@ -29,6 +29,11 @@ public class BlocksShapesData {
                 {1},
                 {1}
         });
+        put(JBlock::new, new byte[][]{
+                {0, 1},
+                {0, 1},
+                {1, 1}
+        });
         put(OBlock::new, new byte[][]{
                 {1, 1},
                 {1, 1}
