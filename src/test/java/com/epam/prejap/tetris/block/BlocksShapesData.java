@@ -18,22 +18,10 @@ public class BlocksShapesData {
      * Feel free to add more shapes here (through static init block). They will be tested automatically.
      */
     private static final Map<Supplier<Block>, byte[][]> blocks = new LinkedHashMap<>() {{
-        put(SBlock::new, new byte[][]{
-                {0, 1, 1},
-                {1, 1, 0}
-        });
-        put(OBlock::new, new byte[][]{
-                {1, 1},
-                {1, 1}
-        });
-        put(TBlock::new, new byte[][]{
-                {1, 1, 1},
-                {0, 1, 0}
-        });
-        put(YBlock::new, new byte[][]{
+        put(HBlock::new, new byte[][]{
                 {1, 0, 1},
-                {0, 1, 0},
-                {0, 1, 0}
+                {1, 1, 1},
+                {1, 0, 1}
         });
         put(IBlock::new, new byte[][]{
                 {1},
@@ -46,10 +34,22 @@ public class BlocksShapesData {
                 {0, 1},
                 {1, 1}
         });
-        put(HBlock::new, new byte[][]{
-                {1, 0, 1},
+        put(OBlock::new, new byte[][]{
+                {1, 1},
+                {1, 1}
+        });
+        put(SBlock::new, new byte[][]{
+                {0, 1, 1},
+                {1, 1, 0}
+        });
+        put(TBlock::new, new byte[][]{
                 {1, 1, 1},
-                {1, 0, 1}
+                {0, 1, 0}
+        });
+        put(YBlock::new, new byte[][]{
+                {1, 0, 1},
+                {0, 1, 0},
+                {0, 1, 0}
         });
     }};
 
