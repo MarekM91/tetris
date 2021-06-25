@@ -37,9 +37,7 @@ class Tetris {
                 if (move == Move.TO_BOTTOM_NOW) {
                     moved = true;
                 }
-                playfield.findAndRemoveFilledLines();
             } while (nextMove);
-
 
         } while (moved);
 
@@ -50,10 +48,9 @@ class Tetris {
     }
 
     public static void main(String[] args) {
-        Parameters parameters = new Parameters(args);
-        int rows = parameters.getRows();
-        int cols = parameters.getCols();
-        int delay = parameters.getDelay();
+        int rows = 10;
+        int cols = 20;
+        int delay = 500;
 
         Player player = new RandomPlayer();
         if (args.length > 0 && args[0].contains("human"))
