@@ -116,8 +116,4 @@ public class Parameters {
     public int getDelay() {
         return Args.DELAY.value();
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8d8851d23446fcfbca47b0215f475345d6277054
