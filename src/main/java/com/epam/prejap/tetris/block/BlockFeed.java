@@ -12,10 +12,9 @@ public class BlockFeed {
             IBlock::new,
             JBlock::new,
             OBlock::new,
+            SBlock::new,
             TBlock::new,
-            YBlock::new,
-            IBlock::new,
-            SBlock::new
+            YBlock::new
     );
 
     public BlockFeed() {
